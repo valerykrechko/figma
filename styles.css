@@ -113,9 +113,11 @@ header {
     gap: 30px;
     justify-content: center;
 }
-.title {
+.gallery__title {
     font-size: 36px;
     font-family: sans-serif;
+    margin-top: 70px;
+    margin-bottom: 70px;
 }
 .item {
     width: 362px;
