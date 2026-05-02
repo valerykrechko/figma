@@ -1,4 +1,110 @@
-.container {
+
+header {
+    margin: 0 auto;
+    padding-top: 53px;
+    background: url(/img/header/header_img.jpg) center/cover fixed;
+    width: 1600px;
+    height: 720px;
+}
+.header__nav {
+    display: flex;
+    height: 36px;
+    line-height: 36px;
+}
+.header__logo {
+    object-fit: none;
+    margin-left: 227px;
+}
+.header__title {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    margin-left: 3px;
+    color: #171FE5;
+}
+.menu {
+    font-size: 21px;
+    margin-left: 324px;
+    li{
+        display: inline-block;
+        list-style-type: none;
+        padding: 0 20px;
+    }
+    a {
+        font-family: "Roboto", sans-serif;
+        font-weight: 500;
+        text-decoration: none;
+        color: black;
+    }
+    
+}
+.menu2, .menu3, .menu4 {
+    opacity: 70%;
+}
+.header__content {
+    display: flex
+
+}
+.shop {
+    display: flex;
+    flex-direction: column;
+    width: 517px;
+    height: 348px;
+    margin-left: 227px;
+    margin-top: 153px;
+}
+.shop__title {
+    font-family: "Lexend", sans-serif;
+    font-weight: 600;
+    font-family: 21px;
+    color: #171FE5;
+    margin-bottom: 10px;
+}
+.shop__detail {
+    margin: 0;
+    font-family: "Lexend", sans-serif;
+    font-weight: 600;
+    line-height: 120%;
+    font-size: 61px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.shop__detail1 {
+    font-family: "Lexend", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    margin-bottom: 40px;
+}
+.shop__button{
+    width: 216px;
+    height: 54px;
+    text-decoration: none;
+    border: 0px solid;
+    background-color: #FF843F;
+    border-radius: 39px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    p {
+        font-family: "Roboto", sans-serif;
+        font-weight: 500;
+        font-size: 18px;
+        color: #ffffff;
+        margin-left: 30px;;
+    }
+    img {
+        margin-right: 14px;
+    }
+}
+
+.sale__banner {
+    margin-top: 45px;
+    margin-left: 69px;
+    width: 681px;
+    height: 590px;
+    background: url(/img/header/women.png);
+}
+
+.container__gallery {
     width: 1146px;
     margin: 0 auto;
 }
