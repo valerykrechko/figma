@@ -25,6 +25,7 @@ header {
 .header__title {
     width: 97px;
     font-weight: 500;
+    font-size: 31px;
     color: #171FE5;
 }
 .menu {
