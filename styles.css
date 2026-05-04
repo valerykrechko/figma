@@ -1,4 +1,6 @@
-
+body {
+    font-family: "Roboto", sans-serif;
+}
 header {
     margin: 0 auto;
     padding-top: 53px;
@@ -12,22 +14,25 @@ header {
     line-height: 36px;
 }
 .header__logo {
+    width: 41px;
     object-fit: none;
     margin-left: 227px;
 }
 .header__title {
+    width: 97px;
     font-family: "Roboto", sans-serif;
     font-weight: 500;
-    margin-left: 3px;
     color: #171FE5;
 }
 .menu {
-    font-size: 21px;
-    margin-left: 324px;
+    display: flex;
+    justify-content: space-between;
+    width: 319px;
+    font-size: 18px;
+    margin-left: 344px;
     li{
         display: inline-block;
         list-style-type: none;
-        padding: 0 20px;
     }
     a {
         font-family: "Roboto", sans-serif;
@@ -98,10 +103,10 @@ header {
 
 .sale__banner {
     margin-top: 45px;
-    margin-left: 69px;
-    width: 681px;
+    margin-left: 39px;
+    width: 735px;
     height: 590px;
-    background: url(/img/header/women.png);
+    background: url(/img/header/Group\ 305.png);
 }
 
 .container__gallery {
@@ -188,6 +193,7 @@ footer {
     flex-direction: row;
     justify-content: space-around;
 }
+
 .footer__link {
     display: flex;
     flex-direction: column;
@@ -211,17 +217,16 @@ footer {
 .link__nav {
     display: flex;
     flex-direction: column;
+    font-weight: 500;
+    color: #ffffff;
+    opacity: 70%;
+    text-decoration: none;
+    font-size: 16px;
 }
 .link__nav1, .link__nav2, .link__nav3 {
     margin-bottom: 10px;
 }
-.support__nav {
-    display: flex;
-    flex-direction: column;
-}
-.support__nav1, .support__nav2, .support__nav3 {
-    margin-bottom: 10px;
-}
+
 .footer__support {
     display: flex;
     flex-direction: column;
@@ -237,18 +242,20 @@ footer {
         font-size: 16px;
     }
 }
-.link__nav {
-    font-weight: 500;
-    color: #ffffff;
-    opacity: 70%;
-    text-decoration: none;
-    font-size: 16px;
-}
 .support__title {
     font-weight: 600;
     font-size: 22px;
     margin-bottom: 25px;
 }
+
+.support__nav {
+    display: flex;
+    flex-direction: column;
+}
+.support__nav1, .support__nav2, .support__nav3 {
+    margin-bottom: 10px;
+}
+
 
 .footer__contact {
     display: flex;
