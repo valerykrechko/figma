@@ -215,6 +215,11 @@ header {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    font-size: 16px;
+    line-height: 160%;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
     a {
         text-decoration: none;
         color: #E56117;
