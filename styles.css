@@ -2,15 +2,18 @@ body {
     font-family: "Roboto", sans-serif;
 }
 header {
-    margin: 0 auto;
-    padding-top: 53px;
     background: url(/img/header/header_img.jpg) center/cover fixed;
     width: auto;
     height: 720px;
-}
+    padding-left: 148px;
+    overflow: hidden;
+} 
 .header__container {
+    overflow: hidden;
     margin: 0 auto;
     width: 1291px;
+    height: 720px;
+    padding-top: 53px;
 }
 .header__nav {
     display: flex;
@@ -236,6 +239,7 @@ footer {
     color: #ffffff;
 }
 .footer__container {
+    overflow: hidden;
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
