@@ -4,7 +4,6 @@ body {
 header {
     background: url(/img/header/header_img.jpg) center/cover fixed;
     width: auto;
-    height: 720px;
     padding-left: 148px;
     overflow: hidden;
 } 
@@ -17,15 +16,12 @@ header {
 }
 .header__nav {
     display: flex;
-    height: 36px;
     line-height: 36px;
 }
 .header__logo {
     width: 41px;
-    object-fit: none;
 }
 .header__title {
-    width: 97px;
     font-weight: 500;
     font-size: 31px;
     color: #171FE5;
@@ -55,25 +51,25 @@ header {
     opacity: 100%;
 }
 .header__content {
-    display: flex
+    display: flex;
 
 }
 .shop {
     display: flex;
     flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
     width: 517px;
-    height: 348px;
     margin-top: 153px; 
 }
 .shop__title {
     font-family: "Lexend", sans-serif;
     font-weight: 600;
-    font-family: 21px;
+    font-size: 21px;
     color: #171FE5;
     margin-bottom: 10px;
 }
 .shop__detail {
-    margin: 0;
     font-family: "Lexend", sans-serif;
     
     font-weight: 600;
@@ -92,33 +88,31 @@ header {
     margin-bottom: 40px;
 }
 .shop__button{
-    width: 216px;
-    height: 54px;
+    display: flex;
     text-decoration: none;
     border: 0px solid;
     background-color: #FF843F;
     border-radius: 39px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    p {
-        font-weight: 500;
-        font-style: normal;
-        font-size: 18px;
-        color: #ffffff;
-        margin-left: 30px;;
-    }
+    font-weight: 500;
+    font-style: normal;
+    font-size: 18px;
+    color: #ffffff;
+    padding: 14px 14px 14px 30px;
     img {
-        margin-right: 14px;
+        object-fit: cover;
+        margin-left: 25px;
     }
 }
 
 .sale__banner {
-    margin-top: 45px;
-    margin-left: 39px;
+    margin-top: 39px;
+    margin-left: 0px;
     width: 735px;
     height: 590px;
-    background: url(/img/header/Group\ 305.png);
+    background: url(/img/header/Group\ 305.png) center/contain no-repeat;
+    position: relative;
+    left: 39px;
+
 }
 
 .container__gallery {
@@ -159,9 +153,12 @@ header {
 }
 
 .container__product {
+    display: flex;
+    flex-direction: column;
     font-family: "Lexend", sans-serif;
-    width: 1146px;
+    max-width: 1186px;
     margin: 0 auto;
+    padding: 0 20px;
     margin-top: 120px;
 }
 .product__title{
@@ -175,25 +172,24 @@ header {
 .product__list {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-between;
 }
 .product__item {
     width: 362px;
-    height: 502px;
 }
 .product__item--info {
     margin: 0 auto;
     padding-top: 25px;
     padding-left: 25px;
-    width: 362px;
-    height: 215px;
+    padding-right: 29px;
+    padding-bottom: 25px;
     box-shadow: 0 4px 8px rgba(4, 5, 34, 0.05);
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
     
 }
 .product__item--title {
-    height: 31px;
     line-height: 140%;
     font-optical-sizing: auto;
     font-weight: 600;
@@ -202,8 +198,6 @@ header {
 }
 .product__item--details {
     margin-top: 10px;
-    width: 308px;
-    height: 78px;
     line-height: 160%;
     font-optical-sizing: auto;
     font-weight: 400;
@@ -213,8 +207,6 @@ header {
 }
 .product__item--more {
     margin-top: 20px;
-    width: 312px;
-    height: 26px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -231,44 +223,47 @@ header {
 
 
 footer {
+    display: flex;
     margin: 0 auto;
     margin-top: 120px;
     background-color: #040522;
-    width: auto;
-    height: 313px;
+    height: 100%;
     color: #ffffff;
 }
 .footer__container {
-    overflow: hidden;
     display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
     align-items: flex-start;
     justify-content: space-between;
-    width: 1146px;
+    width: 1186px;
+    margin: 0 auto;
+    padding: 0 20px;
     padding-top: 70px;
-    margin: auto;
+    padding-bottom: 72px;
 }
 .footer__social{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 164px;
     width: 260px;
     p {
         font-family: "DM Sans", sans-serif;
         font-weight: 400;
         font-size: 16px;
         opacity: 70%;
+        margin-bottom: 25px;
     }
+}
+.social__img{
+    margin-bottom: 25px;
 }
 .social__logo {
     display: flex;
     flex-direction: row;
     align-items: center;
 }
-.social__img {
-    width: 41.04px;
-    height: 31.01px;
-}
+
 .social__title {
     font-weight: 500;
     font-size: 31px;
@@ -286,7 +281,6 @@ footer {
     font-family: "Poppins", sans-serif;
     font-style: normal;
     width: 113px;
-    height: 171px;
     a {
         color: #ffffff;
         opacity: 70%;
@@ -295,22 +289,6 @@ footer {
         font-weight: 500;
     }
 }
-.link__title {
-    font-size: 22px;
-    font-weight: 600;
-    margin-bottom: 25px;
-    height: 33px;
-}
-.link__nav {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 113px;
-    a {
-        height: 17px;
-    }
-}
-
 
 .footer__support {
     display: flex;
@@ -318,7 +296,6 @@ footer {
     font-family: "Poppins", sans-serif;
     font-style: normal;
     width: 103px;
-    height: 171px;
     a {
         font-weight: 500;
         color: #ffffff;
@@ -327,21 +304,17 @@ footer {
         font-size: 16px;
     }
 }
-.support__title {
+.link__title {
     font-weight: 600;
     font-size: 22px;
     margin-bottom: 25px;
     height: 33px;
 }
 
-.support__nav {
+.link-nav {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    height: 113px;
-    a{
-        height: 17px;
-    }
+    gap: 10px;
 }
 
 .footer__contact {
@@ -349,18 +322,48 @@ footer {
     flex-direction: column;
     justify-content: space-between;
     width: 193px;
-    height: 139px;
     font-family: "Poppins", sans-serif;
 }
 .contact__title {
     font-weight: 600;
     font-size: 22px;
+    margin-bottom: 25px;
 }
 .contact__details {
-    height: 81px;
     opacity: 70%;
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.7;
 }
+
+/* @media (max-width: 1199px){
+header {
+    padding-left: 1.8em;
+}
+.header__container {
+    margin: 0;
+    width: 960px;
+    padding-top: 40px;
+}
+.header__nav {
+    
+}
+.header__logo {
+    
+}
+.shop__title {
+    
+}
+.shop__detail {
+    
+}
+.sale__banner {
+    background: url(/img/header/Group\ 305.png) center/contain no-repeat;
+    position: relative;
+}
+}
+@media (max-width: 991px)
+{
+
+}  */
