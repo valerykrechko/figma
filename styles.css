@@ -269,7 +269,6 @@ footer {
     font-size: 31px;
 }
 .social__nav {
-    width: 165px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -306,7 +305,6 @@ footer {
     font-weight: 600;
     font-size: 22px;
     margin-bottom: 25px;
-    height: 33px;
 }
 
 .link-nav {
@@ -319,7 +317,6 @@ footer {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    width: 193px;
     font-family: "Poppins", sans-serif;
 }
 .contact__title {
